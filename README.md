@@ -1,44 +1,38 @@
-# P1-Image_Classification_by_Machine_Learning
-Image classification project using CIFAR-10 dataset and MobileNetV2, developed as part of an AI/ML internship by TechSaksham and EduNet under AICTE. The project includes model training with TensorFlow/Keras and deployment via Streamlit for real-time image classification.
+# P1-Image-Classification-by-Machine-Learning-AICTE-Internship 
 
-## Requirements
+ I have done this project to classify images by using CNNModel and pre Trained MobileNet Model. I created the streamlit app for the same.  
 
-### Hardware Requirements:
-- Processor: Intel i5 or higher (or equivalent AMD processor)
-- GPU: NVIDIA GTX 1650 or higher (for faster model training)
-- Memory: 8 GB RAM (preferably 16 GB for optimal performance)
-- Storage: At least 10 GB of free disk space
-- Internet Connectivity: Required for installing dependencies and downloading the CIFAR-10 dataset
+ ## How to run the code   
+ 
+  1. Download repository:
+https://github.com/jadhavS04/P1-Image-Classification-by-Machine-Learning-AICTE-Internship
 
-### Software Requirements:
-- Python 3.6 (preferably 3.6 or higher)
-- TensorFlow 2.0
-- Keras
-- Streamlit
-- NumPy
-- Pandas
-- Matplotlib
-- Anaconda (optional, but recommended for managing environments)
+ 2. Download anaconda:
+https://www.anaconda.com/download
 
-## Installation
+ 3. Create and activate a virtual environment:
+open the anaconda prompt-> conda create --name aicte_ImgClass python=3.9
+to activate environment-> conda activate aicte_ImgClass
+to list enviroment-> conda env list
 
-## Install dependencies:
-  pip install -r requirements.txt
+ 4. Install the required packages:
+tensorflow-> conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+Anything above 2.10 is not supported on the GPU on Windows Native->
+python -m pip install "tensorflow<2.11"
+Verify the installation->
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))" 
+numpy-> pip install numpy    
+matplotlib-> pip install matplotlib   
 
-## Download the CIFAR-10 dataset:
-  The CIFAR-10 dataset will be automatically downloaded by TensorFlow when running the code for the first time.
+ 5. Create Folder
+move all repository files to folder AICTE Internship ImgClass pro:
+eg. open folder path-> (aicte_ImgClas) C:\Users\subha\.anaconda\AICTE Internship-ImgClass pro
 
-## Running the Application
-  python newapp.py
-  This will launch a local Streamlit server, and the application will be accessible at: http://localhost:8502
-  
-How the Application Works:
-The user can upload an image through the Streamlit interface.
-The trained MobileNetV2 model will classify the uploaded image into one of the 10 categories of the CIFAR-10 dataset.
-The predicted class and confidence score will be displayed in the web interface.
+ 6. Start the Streamlit app:
+(aicte_ImgClas) C:\Users\subha\.anaconda\AICTE Internship-ImgClass pro> streamlit run newApp.py 
 
-Model Training
-The model is built using TensorFlow and Keras with the MobileNetV2 architecture. It is trained using the CIFAR-10 dataset, and data augmentation techniques are applied to prevent overfitting. The model is evaluated on a test dataset, and performance is measured using accuracy and loss.
+ 7. Open the app: The app will open in your default web browser. If not, navigate to http://localhost:8501 
 
+Contributing
+Feel free to fork the repository, open issues, or submit pull requests to contribute to the project.
 
-   
