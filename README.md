@@ -4,8 +4,7 @@
 
  ## How to run the code   
  
-  1. Download repository:
-https://github.com/jadhavS04/P1-Image-Classification-by-Machine-Learning-AICTE-Internship
+  1. Download repository.
 
  2. Download anaconda:
 https://www.anaconda.com/download
@@ -25,11 +24,10 @@ numpy-> pip install numpy
 matplotlib-> pip install matplotlib   
 
  5. Create Folder
-move all repository files to folder AICTE Internship ImgClass pro:
-eg. open folder path-> (aicte_ImgClas) C:\Users\subha\.anaconda\AICTE Internship-ImgClass pro
+move all repository files to the created folder.
 
  6. Start the Streamlit app:
-(aicte_ImgClas) C:\Users\subha\.anaconda\AICTE Internship-ImgClass pro> streamlit run newApp.py 
+streamlit run newApp.py , Simply run this command in treminal.
 
  7. Open the app: The app will open in your default web browser. If not, navigate to http://localhost:8501 
 
