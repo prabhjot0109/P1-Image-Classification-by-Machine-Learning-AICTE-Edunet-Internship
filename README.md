@@ -30,7 +30,7 @@ Image classification project using CIFAR-10 dataset and MobileNetV2, developed a
 
 ## Running the Application
   python newapp.py
-  This will launch a local Streamlit server, and the application will be accessible at: http://localhost:8501
+  This will launch a local Streamlit server, and the application will be accessible at: http://localhost:8502
   
 How the Application Works:
 The user can upload an image through the Streamlit interface.
